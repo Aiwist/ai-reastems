@@ -44,7 +44,7 @@ def package(output):
             raise ValueError(f"Manifest hash mismatch: {name}")
         files[f"ReaStems/{name}"] = path
     for name in ("Установить.bat", "Install.ps1", "reaimgui_install.ps1", "reaper_actions.ps1",
-                 "README.md", "CHANGELOG.md", "RELEASE_NOTES.md", "LICENSE", "NOTICE.txt"):
+                 "README.md", "README.ru.md", "CHANGELOG.md", "RELEASE_NOTES.md", "LICENSE", "NOTICE.txt"):
         files[name] = ROOT / name
 
     archive = output / f"Ai_ReaStems_Setup_{version}_Windows.zip"

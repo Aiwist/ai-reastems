@@ -1,105 +1,109 @@
 # Ai ReaStems
 
-Ai ReaStems разделяет аудио на стемы прямо в REAPER. Выделите аудио на
-дорожке, выберите модель и отметьте, какие стемы нужно добавить в проект.
-Обработка выполняется локально через stems.cpp. Каждый выбранный стем
-появляется на отдельной дорожке под исходной.
+Ai ReaStems splits audio into stems right inside REAPER. Select audio on a
+track, pick a model and choose which stems to add to the project. Processing
+runs locally through stems.cpp. Every selected stem appears on its own track
+below the source item.
 
-## Возможности
+Russian version: [README.ru.md](README.ru.md)
 
-- Разделение микса на вокал, бас, барабаны и другие партии с HTDemucs.
-- Разделение барабанного аудио на бочку, рабочий, томы, хай-хэт, райд и крэш
-  с MDX23C DrumSep.
-- Извлечение вокала и очистка записей от шума, эха и реверберации
-  с помощью специализированных моделей.
-- Обработка одного или нескольких айтемов на одной дорожке с учётом
-  стретч-маркеров и скорости активных тейков. Промежутки заполняются
-  тишиной, а наложения суммируются.
+## Features
 
-## Интерфейс
+- Split a mix into vocals, bass, drums and other parts with HTDemucs.
+- Split drum audio into kick, snare, toms, hi-hat, ride and crash with
+  MDX23C DrumSep.
+- Extract vocals and clean recordings from noise, echo and reverb with
+  dedicated models.
+- Process one or several items on a track, respecting stretch markers and the
+  playback rate of active takes. Gaps are filled with silence and overlaps are
+  summed.
 
-**Главное окно** · выбор модели и стемов для вставки в проект.
+## Interface
 
-![Главное окно Ai ReaStems с моделью MDX23C DrumSep и выбором барабанных стемов](Media/screenshots/main-window.png)
+**Main window** · model selection and stems to insert into the project.
 
-**Настройки** · каталог моделей, обновление движка и выбор папок хранения.
+![Ai ReaStems main window with the MDX23C DrumSep model and drum stems selected](Media/screenshots/main-window.png)
 
-![Настройки Ai ReaStems с каталогом моделей и параметрами движка](Media/screenshots/settings.png)
+**Settings** · model catalog, engine updates and storage folders.
 
-На скриншотах показан интерфейс версии 0.2.4. Готовый установщик имеет версию 0.2.5.
+![Ai ReaStems settings with the model catalog and engine options](Media/screenshots/settings.png)
 
-## Установка через ReaPack
+The screenshots show the 0.2.4 interface; the current installer is 0.2.5.
 
-1. Установите [ReaPack](https://reapack.com), если его ещё нет.
-2. В REAPER откройте *Extensions → ReaPack → Import repositories…*
-3. Вставьте ссылку на общий индекс скриптов Aiwist — этот адрес один для всех
-   его скриптов, новые появятся в нём автоматически:
+## Installation via ReaPack
+
+1. Install [ReaPack](https://reapack.com) if you don't have it.
+2. In REAPER open *Extensions → ReaPack → Import repositories…*
+3. Paste the Aiwist scripts index URL. It is the single address for every
+   Aiwist script; new ones appear there automatically:
 
    ```
    https://github.com/Aiwist/ai-scripts/raw/main/index.xml
    ```
 
-4. Нажмите *OK*, затем *Extensions → ReaPack → Browse packages*, найдите
-   **Ai ReaStems** и установите пакет.
-5. Если ещё не установлен **ReaImGui**, поставьте его из репозитория
-   *ReaTeam Extensions*.
-6. Откройте **Actions → Show action list**, найдите `Aiwist_ReaStems.lua`
-   и нажмите **Run**.
+4. Press *OK*, then *Extensions → ReaPack → Browse packages*, find
+   **Ai ReaStems** and install the package.
+5. If **ReaImGui** is not installed yet, get it from the *ReaTeam Extensions*
+   repository.
+6. Open **Actions → Show action list**, find `Aiwist_ReaStems.lua` and press
+   **Run**.
 
-ReaPack ставит скрипт, движок stems.cpp, шрифты и лицензии. Модели
-скачиваются отдельно из настроек Ai ReaStems.
+ReaPack installs the script, the stems.cpp engine, fonts and licenses. Models
+are downloaded separately from the Ai ReaStems settings.
 
-## Установка на Windows
+## Installation on Windows
 
-Скачайте `Ai_ReaStems_Setup_0.2.5_Windows.zip` в разделе **Releases**.
-Распакуйте архив целиком, запустите `Установить.bat` и выберите папку
-ресурсов REAPER. Установщик проверит комплект, установит Ai ReaStems
-с движком stems.cpp Vulkan/CPU, при необходимости подключит ReaImGui
-и добавит скрипт в Actions. Поддерживаются Windows x64 и REAPER x64.
+Download `Ai_ReaStems_Setup_0.2.5_Windows.zip` from the **Releases** section.
+Unpack the archive completely, run `Установить.bat` and choose the REAPER
+resource folder. The installer verifies the package, installs Ai ReaStems with
+the stems.cpp Vulkan/CPU engine, hooks up ReaImGui if needed and adds the
+script to the Actions list. Windows x64 and REAPER x64 are supported.
 
-В REAPER откройте **Actions → Show action list**, найдите `Aiwist_ReaStems.lua`
-и нажмите **Run**. Модели загружаются отдельно из настроек скрипта.
+In REAPER open **Actions → Show action list**, find `Aiwist_ReaStems.lua` and
+press **Run**. Models are loaded separately from the script settings.
 
-При ручной установке поместите содержимое `ReaStems/` в
-`Scripts/Aiwist/ReaStems` внутри папки ресурсов REAPER и добавьте
-`Aiwist_ReaStems.lua` через **New action → Load ReaScript**.
+For manual installation, copy the contents of `ReaStems/` into
+`Scripts/Aiwist/ReaStems` inside the REAPER resource folder and add
+`Aiwist_ReaStems.lua` through **New action → Load ReaScript**.
 
-Ai ReaStems — новое имя Ai Stems. При обновлении скрипт читает прежние
-настройки и распознаёт ранее скачанные модели.
+Ai ReaStems is the new name of Ai Stems. On update the script reads the
+previous settings and recognises models downloaded earlier.
 
-## Папки и модели
+## Folders and models
 
-| Что хранится | Папка по умолчанию |
+| Stored data | Default folder |
 | --- | --- |
-| Скрипт и комплектный движок | `<ресурсы REAPER>/Scripts/Aiwist/ReaStems/runtime/stems-v0.1.6` для движка |
-| Обновления stems.cpp | `<ресурсы REAPER>/Scripts/Aiwist/ReaStems/runtime/stems-updates` |
-| Данные, временные WAV и кэш | `%LOCALAPPDATA%/Aiwist/Ai ReaStems` |
-| Новые модели GGUF | `%LOCALAPPDATA%/Ai ReaStems/models` |
+| Script and bundled engine | `<REAPER resources>/Scripts/Aiwist/ReaStems/runtime/stems-v0.1.6` for the engine |
+| stems.cpp updates | `<REAPER resources>/Scripts/Aiwist/ReaStems/runtime/stems-updates` |
+| Data, temporary WAV files and cache | `%LOCALAPPDATA%/Aiwist/Ai ReaStems` |
+| New GGUF models | `%LOCALAPPDATA%/Ai ReaStems/models` |
 
-Для портативного REAPER данные по умолчанию хранятся в
-`<ресурсы REAPER>/Data/Ai ReaStems`, а модели — в её подпапке `models`.
-Выделите или скопируйте текущий путь, откройте папку в Проводнике
-либо вставьте новый путь и нажмите **Применить**. После смены папки данных откройте
-скрипт заново. Найденные модели из прежней папки доступны, пока она доступна
-REAPER. Кэш и журналы относятся к выбранной папке данных.
+With a portable REAPER, data is stored in `<REAPER resources>/Data/Ai ReaStems`
+by default and models in its `models` subfolder. Select or copy the current
+path, open the folder in Explorer, or paste a new path and press **Apply**.
+Reopen the script after changing the data folder. Models found in the previous
+folder remain available as long as it is reachable by REAPER. Cache and logs
+belong to the selected data folder.
 
-Таблица настроек содержит все 13 моделей из каталога stems.cpp 0.1.6
-в варианте F32. Модели скачиваются с Hugging Face по одной. Размер
-и SHA‑256 проверяются перед подключением. Подходящие GGUF из Ai Transcriber
-Plus повторно не скачиваются. Обновление движка запускается вручную из
-настроек и подгружает проверенную сборку Vulkan/CPU из GitHub Releases.
+The settings table lists all 13 models from the stems.cpp 0.1.6 catalog in the
+F32 variant. Models are downloaded from Hugging Face one by one. Size and
+SHA-256 are verified before a model is used. Matching GGUF files from
+Ai Transcriber Plus are not downloaded again. The engine update is started
+manually from the settings and fetches a verified Vulkan/CPU build from
+GitHub Releases.
 
-[Каталог и лицензии моделей stems.cpp](https://github.com/betweentwomidnights/stems.cpp/blob/v0.1.6/docs/DISTRIBUTION.md)
+[stems.cpp model catalog and licenses](https://github.com/betweentwomidnights/stems.cpp/blob/v0.1.6/docs/DISTRIBUTION.md)
 
-## Диагностика
+## Diagnostics
 
-Ошибки записываются в `logs/errors.log` в папке данных Ai ReaStems. Кнопка
-**Сохранить отчёт об ошибке** в настройках или под сообщением об ошибке
-создаёт ZIP в подпапке `reports`. Отчёт содержит сведения о версии, ошибке
-и доступные журналы задания. Аудио, модели и конфигурации заданий исключены.
+Errors are written to `logs/errors.log` in the Ai ReaStems data folder. The
+**Save error report** button in the settings, or under an error message,
+creates a ZIP in the `reports` subfolder. The report contains the version,
+the error and available job logs. Audio, models and job configurations are
+excluded.
 
-## Лицензия
+## License
 
-Код Ai ReaStems распространяется по Apache License 2.0. У движка,
-шрифтов и моделей собственные условия. [Лицензия проекта](LICENSE) ·
-[Уведомления](NOTICE.txt) · [Лицензии компонентов](ReaStems/INSTALL_LICENSES_RU.txt)
+Ai ReaStems code is distributed under the Apache License 2.0. The engine,
+fonts and models have their own terms. [Project license](LICENSE) ·
+[Notices](NOTICE.txt) · [Component licenses](ReaStems/INSTALL_LICENSES_RU.txt)
