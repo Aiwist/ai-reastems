@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "order": [
+    "htdemucs",
+    "htdemucs_ft",
+    "htdemucs_6s",
+    "mel_band_roformer_kim",
+    "bs_roformer_viperx_317",
+    "mdx_net_kim_vocal_2",
+    "mdx23c_drumsep",
+    "uvr_denoise_lite",
+    "uvr_denoise",
+    "uvr_deecho_normal",
+    "uvr_deecho_aggressive",
+    "uvr_deecho_dereverb",
+    "bs_roformer_dereverb_room"
+  ],
+  "models": {
+    "htdemucs": {
+      "label": "HTDemucs",
+      "category": "mix",
+      "stems": [
+        "drums",
+        "bass",
+        "other",
+        "vocals"
+      ],
+      "license": "mit",
+      "file": "htdemucs-42M-v1.0-F32.gguf",
+      "bytes": 167986560,
+      "sha256": "f53c21a24d72363ff12c6b692d46a37bddab466f93b13bbd20c6362ed14a4951",
+      "url": "https://huggingface.co/thepatch/htdemucs-GGUF/resolve/2108da44a1102a16b96046977fd4c079435a072c/htdemucs-42M-v1.0-F32.gguf"
+    },
+    "htdemucs_ft": {
+      "label": "HTDemucs FT",
+      "category": "mix",
+      "stems": [
+        "drums",
+        "bass",
+        "other",
+        "vocals"
+      ],
+      "license": "mit",
+      "file": "htdemucs_ft-4x42M-v1.0-F32.gguf",
+      "bytes": 671943072,
+      "sha256": "3b4d14ac065f16435bcc67faa1b8db6f0f959a4558b8004af91a818ca909539c",
+      "url": "https://huggingface.co/thepatch/htdemucs-GGUF/resolve/2108da44a1102a16b96046977fd4c079435a072c/htdemucs_ft-4x42M-v1.0-F32.gguf"
+    },
+    "htdemucs_6s": {
+      "label": "HTDemucs 6s",
+      "category": "mix",
+      "stems": [
+        "drums",
+        "bass",
+        "other",
+        "vocals",
+        "guitar",
+        "piano"
+      ],
+      "license": "mit",
+      "file": "htdemucs_6s-27M-v1.0-F32.gguf",
+      "bytes": 109708256,
+      "sha256": "4a307ef23dc336a2f2cbf2142839b78c02166082d0e59c154141c193d3ff45e0",
+      "url": "https://huggingface.co/thepatch/htdemucs-GGUF/resolve/2108da44a1102a16b96046977fd4c079435a072c/htdemucs_6s-27M-v1.0-F32.gguf"
+    },
+    "mel_band_roformer_kim": {
+      "label": "Mel-Band RoFormer (Kim)",
+      "category": "vocals",
+      "stems": [
+        "vocals",
+        "instrumental"
+      ],
+      "license": "mit",
+      "file": "mel_band_roformer_kim-0.2B-v1.0-F32.gguf",
+      "bytes": 912856512,
+      "sha256": "acefa0d21648549e6a2edb4e2757106961672cb0b45a37f4689dc2537a536e57",
+      "url": "https://huggingface.co/thepatch/mel-band-roformer-kim-GGUF/resolve/c94578e0fc8b280270cdb47e7e4822d6c76e1331/mel_band_roformer_kim-0.2B-v1.0-F32.gguf"
+    },
+    "bs_roformer_viperx_317": {
+      "label": "BS-RoFormer (ViperX 317)",
+      "category": "vocals",
+      "stems": [
+        "vocals",
+        "instrumental"
+      ],
+      "license": "other",
+      "file": "bs_roformer_viperx_317-0.2B-v1.0-F32.gguf",
+      "bytes": 639074304,
+      "sha256": "57425b20ea63d886bcecf8e59a1374613d4a4bb81373262f9e7463d718c02162",
+      "url": "https://huggingface.co/thepatch/bs-roformer-viperx-317-GGUF/resolve/af4359d4e15c1fe9ef9ccea4f796fe744d313b81/bs_roformer_viperx_317-0.2B-v1.0-F32.gguf"
+    },
+    "mdx_net_kim_vocal_2": {
+      "label": "MDX-Net Kim Vocal 2",
+      "category": "vocals",
+      "stems": [
+        "vocals",
+        "instrumental"
+      ],
+      "license": "other",
+      "file": "mdx_net_kim_vocal_2-17M-v1.0-F32.gguf",
+      "bytes": 66709536,
+      "sha256": "fb8810bb08c96724b1bee802f05ce943303429157b8b05b9189a272fd74d3a83",
+      "url": "https://huggingface.co/thepatch/mdx-net-kim-vocal-2-GGUF/resolve/4a6bf269633d29bf4f1b9c5cab397f3853273d18/mdx_net_kim_vocal_2-17M-v1.0-F32.gguf"
+    },
+    "mdx23c_drumsep": {
+      "label": "MDX23C DrumSep",
+      "category": "drums",
+      "stems": [
+        "kick",
+        "snare",
+        "toms",
+        "hh",
+        "ride",
+        "crash"
+      ],
+      "license": "other",
+      "file": "mdx23c_drumsep-0.1B-v1.0-F32.gguf",
+      "bytes": 437545920,
+      "sha256": "0b6bce6ca5d52ae300e31f457e12595f11fbde81d5d2b65bb96813f6e0fd51dd",
+      "url": "https://huggingface.co/thepatch/mdx23c-drumsep-GGUF/resolve/5207fee9baa013128807f1eb298d9608c286d09d/mdx23c_drumsep-0.1B-v1.0-F32.gguf"
+    },
+    "uvr_denoise_lite": {
+      "label": "UVR DeNoise Lite",
+      "category": "cleanup",
+      "stems": [
+        "denoised",
+        "noise"
+      ],
+      "license": "other",
+      "file": "uvr_denoise_lite-4M-v1.0-F32.gguf",
+      "bytes": 17584320,
+      "sha256": "34d259e2550ca4dd1e3c7e51c05a0a0ba883d9bebf8ae756da0dd06382e29bcb",
+      "url": "https://huggingface.co/thepatch/uvr-vr-GGUF/resolve/3984606c8e3ebb48f71e40dc3ae47106b4cb056a/uvr_denoise_lite-4M-v1.0-F32.gguf"
+    },
+    "uvr_denoise": {
+      "label": "UVR DeNoise",
+      "category": "cleanup",
+      "stems": [
+        "denoised",
+        "noise"
+      ],
+      "license": "other",
+      "file": "uvr_denoise-32M-v1.0-F32.gguf",
+      "bytes": 126704832,
+      "sha256": "194ba9028567b9db80b1783ae63736a7dcadefce0865eacfd2a4d06be714604b",
+      "url": "https://huggingface.co/thepatch/uvr-vr-GGUF/resolve/3984606c8e3ebb48f71e40dc3ae47106b4cb056a/uvr_denoise-32M-v1.0-F32.gguf"
+    },
+    "uvr_deecho_normal": {
+      "label": "UVR DeEcho Normal",
+      "category": "cleanup",
+      "stems": [
+        "no_echo",
+        "echo"
+      ],
+      "license": "other",
+      "file": "uvr_deecho_normal-32M-v1.0-F32.gguf",
+      "bytes": 126704864,
+      "sha256": "7a28d774629e0d51930835fdc77e3e0e798414ddae70dd394364c773b1fe2500",
+      "url": "https://huggingface.co/thepatch/uvr-vr-GGUF/resolve/3984606c8e3ebb48f71e40dc3ae47106b4cb056a/uvr_deecho_normal-32M-v1.0-F32.gguf"
+    },
+    "uvr_deecho_aggressive": {
+      "label": "UVR DeEcho Aggressive",
+      "category": "cleanup",
+      "stems": [
+        "no_echo",
+        "echo"
+      ],
+      "license": "other",
+      "file": "uvr_deecho_aggressive-32M-v1.0-F32.gguf",
+      "bytes": 126704896,
+      "sha256": "9279ebbb42f9bf2cfe53e26fb90e6ba7849685d9edb6b207f3b5dedf530be208",
+      "url": "https://huggingface.co/thepatch/uvr-vr-GGUF/resolve/3984606c8e3ebb48f71e40dc3ae47106b4cb056a/uvr_deecho_aggressive-32M-v1.0-F32.gguf"
+    },
+    "uvr_deecho_dereverb": {
+      "label": "UVR DeEcho DeReverb",
+      "category": "cleanup",
+      "stems": [
+        "no_reverb",
+        "reverb"
+      ],
+      "license": "other",
+      "file": "uvr_deecho_dereverb-56M-v1.0-F32.gguf",
+      "bytes": 223149472,
+      "sha256": "23fd6610a854835dd69925c4ab39e229c79a5e563c7c8c79c585694e3df57e2a",
+      "url": "https://huggingface.co/thepatch/uvr-vr-GGUF/resolve/3984606c8e3ebb48f71e40dc3ae47106b4cb056a/uvr_deecho_dereverb-56M-v1.0-F32.gguf"
+    },
+    "bs_roformer_dereverb_room": {
+      "label": "BS-RoFormer Room DeReverb",
+      "category": "cleanup",
+      "stems": [
+        "noreverb",
+        "reverb"
+      ],
+      "license": "gpl-3.0",
+      "file": "bs_roformer_dereverb_room-29M-v1.0-F32.gguf",
+      "bytes": 117804928,
+      "sha256": "3af2436aabce675b06fd2668583a4f12bccd9be009b3193e9f49ed8f11e52b3f",
+      "url": "https://huggingface.co/thepatch/bs-roformer-dereverb-room-GGUF/resolve/6f6f158414c27eb6dad7a6faffd784a719226a4f/bs_roformer_dereverb_room-29M-v1.0-F32.gguf"
+    }
+  }
+}

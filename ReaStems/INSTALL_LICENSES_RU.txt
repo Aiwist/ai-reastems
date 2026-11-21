@@ -1,0 +1,23 @@
+Ai ReaStems 0.2.5 — сведения о компонентах
+
+Ai ReaStems (Aiwist). Исходный Lua-код адаптирован из Ai Transcriber Plus и
+распространяется под Apache License 2.0. См. licenses/AiReaStems-APACHE-2.0.txt.
+
+Движок stems.cpp 0.1.6, Windows x64, Vulkan/CPU.
+Лицензия MIT. Авторы и уведомления о сторонних компонентах находятся
+в runtime/stems-v0.1.6. Исходники:
+https://github.com/betweentwomidnights/stems.cpp/tree/v0.1.6
+
+ReaImGui устанавливается отдельно при необходимости:
+https://github.com/cfillion/reaimgui
+
+Шрифты Inter и JetBrains Mono используют SIL Open Font License 1.1,
+значок настройки взят из Lucide. Тексты лицензий лежат в папке licenses.
+
+Модели загружаются отдельно из репозиториев thepatch на Hugging Face.
+HTDemucs и Mel-Band RoFormer Kim — MIT.
+BS-RoFormer Room DeReverb — GPL-3.0.
+ViperX 317, UVR VR, MDX-Net Kim Vocal 2 и MDX23C DrumSep опубликованы
+с пометкой об отсутствии лицензии на исходные веса. Условия использования
+для каждой модели указаны в её карточке:
+https://github.com/betweentwomidnights/stems.cpp/blob/v0.1.6/docs/DISTRIBUTION.md

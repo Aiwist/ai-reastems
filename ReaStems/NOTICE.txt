@@ -1,0 +1,9 @@
+Ai ReaStems
+
+Copyright (c) 2026 Aiwist
+
+The interface and support ZIP helpers in ReaStems/lib/ui.lua and
+ReaStems/lib/support_zip.lua were adapted from Ai Transcriber Plus by Aiwist.
+These portions retain the Apache License, Version 2.0.
+
+Development assisted by OpenAI Codex.

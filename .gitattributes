@@ -1,0 +1,7 @@
+ReaStems/** -text
+*.ps1 -text
+*.exe binary
+*.dll binary
+*.ttf binary
+ReaStems/licenses/JetBrainsMono-OFL-1.1.txt whitespace=-blank-at-eol
+ReaStems/runtime/stems-v0.1.6/LICENSE-cpp-httplib.txt whitespace=cr-at-eol,-blank-at-eof

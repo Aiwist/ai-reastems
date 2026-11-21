@@ -1,0 +1,16 @@
+{
+  "service": "stems",
+  "version": "v0.1.6",
+  "commit": "0a003317cec3a333a45f3c6670c4437c22db605f",
+  "dirty": false,
+  "ggml_commit": "b77ae790e628270af46a8af1eca38441c23f1252",
+  "platform": "windows-x64",
+  "backends": [
+    "cuda",
+    "vulkan"
+  ],
+  "cuda": "12.8.1",
+  "vulkan_sdk": "1.4.350.0",
+  "msvc_runtime": "14.44.35211.0",
+  "built_utc": "2026-10-25T10:04:55Z"
+}

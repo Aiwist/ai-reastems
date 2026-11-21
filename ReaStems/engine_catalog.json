@@ -1,0 +1,160 @@
+{
+  "runtime": {
+    "version": "0.1.6",
+    "root": "runtime/stems-v0.1.6",
+    "file": "stems-split.exe",
+    "upstream": "https://github.com/betweentwomidnights/stems.cpp",
+    "commit": "0a003317cec3a333a45f3c6670c4437c22db605f",
+    "archives": [
+      {
+        "bytes": 4492949,
+        "url": "https://github.com/betweentwomidnights/stems.cpp/releases/download/v0.1.6/stems-v0.1.6-windows-x64-core.zip",
+        "sha256": "a3a25e892f91fe785eaf8640b593b190cd9626ff69daef975d6eb286fffab241",
+        "file": "stems-v0.1.6-windows-x64-core.zip"
+      },
+      {
+        "bytes": 12338180,
+        "url": "https://github.com/betweentwomidnights/stems.cpp/releases/download/v0.1.6/stems-v0.1.6-windows-x64-vulkan.zip",
+        "sha256": "37900b987217f578d2b313a1fa20138cea7d2cf645d7bc7aa1c875cb035fa05f",
+        "file": "stems-v0.1.6-windows-x64-vulkan.zip"
+      }
+    ],
+    "files": [
+      {
+        "file": "BUILD-INFO.json",
+        "bytes": 396,
+        "sha256": "4f2314b0cb1db246d949ab74d07592e7f30d407c35ca6f0b003314159b68ece1"
+      },
+      {
+        "file": "libstems_v1.h",
+        "bytes": 8408,
+        "sha256": "b4a74b97012908540047bb63ab98227a6240cb703c44070885468556276a3691"
+      },
+      {
+        "file": "LICENSE",
+        "bytes": 1228,
+        "sha256": "32d11b342e7813c8185d8cdfb418a1205e68fc69df821d9cfa260ffa2fd048dd"
+      },
+      {
+        "file": "LICENSE-cpp-httplib.txt",
+        "bytes": 1097,
+        "sha256": "bb546eae5924d8ee842e0e567e6d533c5824bdebccf605f99a5b3429034e6697"
+      },
+      {
+        "file": "LICENSE-ggml.txt",
+        "bytes": 1099,
+        "sha256": "bcd8ec749126d45cb06737d0690295d73df4b6e7e194205bcf91190368f27285"
+      },
+      {
+        "file": "LICENSE-yyjson.txt",
+        "bytes": 1105,
+        "sha256": "7b14b8632bf3d5cb64c7a5f1ddfa9062e9c6eba38ac495a0897541d6658d3ad2"
+      },
+      {
+        "file": "msvcp140.dll",
+        "bytes": 557728,
+        "sha256": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9"
+      },
+      {
+        "file": "RUNTIME_README.md",
+        "bytes": 10610,
+        "sha256": "7d1ba9d4005c9fdc98899e92ab426057b80b8441db7ee47b71e55ab61c667d27"
+      },
+      {
+        "file": "stems-ggml-base.dll",
+        "bytes": 675328,
+        "sha256": "cb9f49c68cd1e3600989dd28ab4d3c7616eba0512f4f3d5578bff1a34be3816f"
+      },
+      {
+        "file": "stems-ggml-cpu-alderlake.dll",
+        "bytes": 974336,
+        "sha256": "bc46334623a6689d49ccfa4e9789ddd63644b3c6fa925aadbf8e5cc28746e30d"
+      },
+      {
+        "file": "stems-ggml-cpu-cannonlake.dll",
+        "bytes": 1018880,
+        "sha256": "97b12eba12d93bf6566cb41ff21a420a5241746e08dca7c142fda724af766fa9"
+      },
+      {
+        "file": "stems-ggml-cpu-cascadelake.dll",
+        "bytes": 1017344,
+        "sha256": "ea0cdfac636df32b1853ad4a4a1d9c378d0e7b76efc3d275d64b4fdd2708f276"
+      },
+      {
+        "file": "stems-ggml-cpu-haswell.dll",
+        "bytes": 975360,
+        "sha256": "efd16017ae084add7ec85b5792e5d90ff4ed15b217f6a2e96039843e91fbc757"
+      },
+      {
+        "file": "stems-ggml-cpu-icelake.dll",
+        "bytes": 1017344,
+        "sha256": "1c13a1f63074dcd34135d5e71ce0c2631010378c62271287fdaa81e233250caa"
+      },
+      {
+        "file": "stems-ggml-cpu-sandybridge.dll",
+        "bytes": 1005568,
+        "sha256": "dc6ee4d612c8c7485c4a346645244acbe110d0909e96d22c5e13155774996044"
+      },
+      {
+        "file": "stems-ggml-cpu-skylakex.dll",
+        "bytes": 1018880,
+        "sha256": "9320c12a2eaf8e052cfce3f91bee796d609b36c073e5fe327706aa4cb7b505d7"
+      },
+      {
+        "file": "stems-ggml-cpu-sse42.dll",
+        "bytes": 774656,
+        "sha256": "846395389a63c4fc21398fffd5780cac5d4de345373de5397fd91d397de22ab5"
+      },
+      {
+        "file": "stems-ggml-cpu-x64.dll",
+        "bytes": 775680,
+        "sha256": "02201ed9c7c5466ccc061fd3b3f06e25660fe936cde0271714d5c7793fca21bd"
+      },
+      {
+        "file": "stems-ggml-vulkan.dll",
+        "bytes": 40100352,
+        "sha256": "45f1d2dc65b2e16cd01c7b8aabe091093028c7dae1792a04bb2af84e03910872"
+      },
+      {
+        "file": "stems-ggml.dll",
+        "bytes": 60416,
+        "sha256": "347ba29ea1b7f7408b99c8a0dc29643668b4d2a7f375f0c378130ae04958243f"
+      },
+      {
+        "file": "stems-server.exe",
+        "bytes": 801280,
+        "sha256": "1b692342baf61c3c6ec17ad6f8a237cbe4ee485908b7fd684fcac02d6aae60e4"
+      },
+      {
+        "file": "stems-split.exe",
+        "bytes": 327168,
+        "sha256": "e7f2fc9c82ebde79a337bd12a362fcdf4a5de52bafb0b3486b29eab7de03ed56"
+      },
+      {
+        "file": "stems.dll",
+        "bytes": 319488,
+        "sha256": "735696b6e60f19627c7fbba21bdf574b8065dbb755c892d736437b8a8f2218c4"
+      },
+      {
+        "file": "THIRD_PARTY_NOTICES.md",
+        "bytes": 1023,
+        "sha256": "c4ee76e5ca381437253402b0ab4afb987f9a85597b09b0a83c72cf8db401f875"
+      },
+      {
+        "file": "vcomp140.dll",
+        "bytes": 193152,
+        "sha256": "55aba23cdcd6484fbb06f4155b8ca75adfce7a881f10afd0c49457165e677164"
+      },
+      {
+        "file": "vcruntime140.dll",
+        "bytes": 124544,
+        "sha256": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+      },
+      {
+        "file": "vcruntime140_1.dll",
+        "bytes": 49792,
+        "sha256": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+      }
+    ]
+  }
+}
