@@ -30,6 +30,48 @@ Russian version: [README.ru.md](README.ru.md)
 
 The screenshots show the 0.2.4 interface; the current installer is 0.2.5.
 
+## Models
+
+Models are downloaded one by one from the Settings dialog: size and SHA-256
+are verified before a model is used, and no weights are bundled in the
+archive. Sizes are for the F32 variant.
+
+**Full mix**
+
+| Model | Splits into | Size |
+| --- | --- | --- |
+| HTDemucs | drums, bass, vocals, other | 160 MB |
+| HTDemucs FT | the same, fine-tuned | 641 MB |
+| HTDemucs 6s | the same four parts plus guitar and piano | 105 MB |
+
+**Vocals**
+
+| Model | Splits into | Size |
+| --- | --- | --- |
+| Mel-Band RoFormer (Kim) | vocals, instrumental | 871 MB |
+| BS-RoFormer (ViperX 317) | vocals, instrumental | 609 MB |
+| MDX-Net Kim Vocal 2 | vocals, instrumental — the lightest in this group | 64 MB |
+
+**Drums**
+
+| Model | Splits into | Size |
+| --- | --- | --- |
+| MDX23C DrumSep | kick, snare, toms, hi-hat, ride, crash | 417 MB |
+
+**Audio cleanup**
+
+| Model | Splits into | Size |
+| --- | --- | --- |
+| UVR DeNoise Lite | noise, clean signal | 17 MB |
+| UVR DeNoise | noise, clean signal | 121 MB |
+| UVR DeEcho Normal | echo, echo-free signal | 121 MB |
+| UVR DeEcho Aggressive | echo, echo-free signal (stronger suppression) | 121 MB |
+| UVR DeEcho DeReverb | reverb, dry signal | 213 MB |
+| BS-RoFormer Room DeReverb | room reverb, dry signal | 112 MB |
+
+13 models in total. To try the script, **HTDemucs** is enough — 160 MB, splits
+a mix into four parts.
+
 ## Installation via ReaPack
 
 1. Install [ReaPack](https://reapack.com) if you don't have it.
